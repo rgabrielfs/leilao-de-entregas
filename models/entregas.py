@@ -3,9 +3,6 @@ import math
 import heapq
 import time
 
-# =============================
-# models/delivery.py
-# =============================
 class Delivery:
     def __init__(self, destination, start_time, bonus):
         self.destination = destination
