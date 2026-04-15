@@ -44,11 +44,9 @@ def aco(graph, deliveries, iterations=80, ants=30):
             solutions.append((route, score))
             best = max(best, score)
 
-        # evaporation
         for k in pheromone:
             pheromone[k] *= 0.85
 
-        # reinforcement
         for route, score in solutions:
             for i in range(len(route) - 1):
                 a = route[i].destination
